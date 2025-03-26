@@ -15,16 +15,25 @@
 <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
 
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
+
+
     <!--header starts here-->
     <header id="blog-header">
         <figure class="logo-figure">
-           <i class="i fab fa-autoprefixer"></i>
+           <i class="fa fa-autoprefixer"></i>
             
         </figure>
-        <nav aria-label="Main Menu">
-            <ul role="menubar">
+
+        <i class="fa fa-bars" id="menu-icon" aria-hidden="true"></i>
+
+
+        <nav aria-label="Main Menu" id="menu" class="hidden">
+            <ul role="menubar"aria-label="Main Menu">
                 <li role="none">
                     <a href="#" class="nav-link"role="menuitem">Home</a>
                 </li>
@@ -103,9 +112,152 @@
          </section>
      
          <!--about me section starts-->
+         <!--archives section starts-->
+         <section id="archives">
+            <h2 class="section-heading ">
+               Archives
+            </h2>
+            <div class="archives-container">
+                <ul class="archives-container-lists">
+                    <li class="archives-container-list">
+                        <img src="images\img-1.jpg" alt="image 1" class="archives-img">
+                    </li>
+                    <li class="archives-container-list">
+                        <img src="images\img-2.jpg" alt="image 2" class="archives-img">
+                    </li>
+                    <li class="archives-container-list">
+                        <img src="images\img-3.jpg" alt="image 3" class="archives-img">
+                    </li>
+                    <li class="archives-container-list">
+                        <img src="images\img-4.jpg" alt="image 4" class="archives-img">
+                    </li>
+                    <li class="archives-container-list">
+                        <img src="images\img-5.jpg" alt="image 5" class="archives-img">
+                    </li>
+                </ul>
+            </div>
+         </section>
+            <!--archives section ends-->
+            <!--blog posts section starts here-->
+            <section id="blog-posts" class="section-center">
+                <h2 class="section-heading blog-post-heading">
+                    Blog Posts
+                 </h2>
+                 <div class="blog-post">
+                    <aside class="blog-post-aside">
+                        <img src="images\blogposts.jpg" alt="blog posts" class="blog-img">
+                    </aside>
+                    <article class="blog-content">
+                        <h3 class="blog-heading">
+                            blog-1
+                        </h3>
+                        <h4 class="blog-subheading">Sub-heading</h4>
+                        <p class="blog-desc">
+                            Et accusam rebum ut sea accusam stet tempor takimata, amet sed duo duo et et consetetur et amet ipsum. Erat sit sed justo eos amet sit. Et est sit accusam amet at justo no. Nonumy diam et gubergren erat at rebum clita ut aliquyam. Magna sed gubergren et ut, magna.
+                        </p>
+                        <button type="submit" class="btn  blog-btn">Learn More</button>
+                    </article>
+                 </div>
+                 <div class="blog-post">
+                    <aside class="blog-post-aside">
+                        <img src="images\blogposts.jpg" alt="blog posts" class="blog-img">
+                    </aside>
+                    <article class="blog-content">
+                        <h3 class="blog-heading">
+                            blog-1
+                        </h3>
+                        <h4 class="blog-subheading">Sub-heading</h4>
+                        <p class="blog-desc">
+                            Et accusam rebum ut sea accusam stet tempor takimata, amet sed duo duo et et consetetur et amet ipsum. Erat sit sed justo eos amet sit. Et est sit accusam amet at justo no. Nonumy diam et gubergren erat at rebum clita ut aliquyam. Magna sed gubergren et ut, magna.
+                        </p>
+                        <button type="submit" class="btn  blog-btn">Learn More</button>
+                    </article>
+                 </div>
+                 <div class="blog-post">
+                    <aside class="blog-post-aside">
+                        <img src="images\blogposts.jpg" alt="blog posts" class="blog-img">
+                    </aside>
+                    <article class="blog-content">
+                        <h3 class="blog-heading">
+                            blog-1
+                        </h3>
+                        <h4 class="blog-subheading">Sub-heading</h4>
+                        <p class="blog-desc">
+                            Et accusam rebum ut sea accusam stet tempor takimata, amet sed duo duo et et consetetur et amet ipsum. Erat sit sed justo eos amet sit. Et est sit accusam amet at justo no. Nonumy diam et gubergren erat at rebum clita ut aliquyam. Magna sed gubergren et ut, magna.
+                        </p>
+                        <button type="submit" class="btn  blog-btn">Learn More</button>
+                    </article>
+                 </div>
+
+            </section>
+             <!--blog posts section ends here-->
+             <!--contact section starts here-->
+             <section id="contact-section" class="section-center">
+                <h2 class="section-heading blog-post-heading text-white">
+                    Contact
+                 </h2>
+                 <form action="" id="contact-form">
+                    <div class="form-control">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" required autocomplete="name">
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" required autocomplete="email">
+                    </div>
+                    <div class="form-control">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message">
+
+                        </textarea>
+                    </div>
+                    <div class="form-control form-button-field">
+                        <button type="submit"class="btn contact-btn">Submit</button>
+                    </div>   
+                      
+                 </form>
+             </section>
+              <!--contact section ends here-->
     </main>
      <!--main ends here-->
-     
+     <!--footer section starts here-->
+     <footer>
+        <p class="copyright">
+            Copyright &copy;by Nasima Khatun. All rights reserved.
+        </p>
+        <nav aria-label="Footer Menu">
+            <ul role="menubar2" id="menubar2" aria-label="Footer Menu">
+                <li role="none">
+                    <a href="#"  target="_blank" class="nav-link"role="menuitem">
+                        <i class="fa fa-facebook-official footer-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="https//www.facebook.com" target="_blank" class="nav-link"role="menuitem">
+                        <i class="fa fa-youtube-play footer-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#" target="_blank" class="nav-link"role="menuitem">
+                        <i class="fa fa-github footer-icon" aria-hidden="true"></i>
+
+                    </a>
+                </li>
+                <li role="none">
+                    <a href="#" target="_blank" class="nav-link"role="menuitem">
+                        <i class="fa fa-linkedin footer-icon" aria-hidden="true"></i>
+                    </a>
+                </li>
+                
+            </ul>
+
+        </nav>
+
+     </footer>
+
+
+     <!--footer section ends here-->
+     <scripts src="./scripts/index.js" ></scripts>
 
 </body>
 </html>
